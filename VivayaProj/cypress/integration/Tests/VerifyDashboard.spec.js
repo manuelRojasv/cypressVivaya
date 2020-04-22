@@ -58,6 +58,10 @@ describe('Verify the Elements within Dashboard', ()=>{
         cy.xpath("/html/body/div[2]/div[3]/h1").should('contains.text', 'Profile Information')
         cy.go(-1)
 
+        dashBoard.select_Contact_Vivaya()
+        cy.xpath("/html/body/div[2]/div[3]/h1").should('contains.text', 'Profile Information')
+        cy.go(-1)
+
 
 
 
